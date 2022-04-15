@@ -112,6 +112,85 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section id="portofolio" className="bg-slate-100 pt-3 pb-16">
+        <br></br>
+        <div className="container">
+          <div className="w-full px-4">
+            <div className="max-w-xl mx-auto text-center mb-10">
+              <h4 className="font-bold uppercase text-primary text-center text-lg mb-2 lg:text-2xl">Portofolio</h4>
+              <div className="w-[150px] lg:w-[210px] h-1 bg-dark-light mb-10 ml-24 -translate-x-2 lg:ml-48 lg:-translate-x-3"></div>
+              <h2 className="font-bold text-dark text-3xl mb-4">Project Terbaru</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="rounded-md shadow-md overflow-hidden">
+                <img src="https://picsum.photos/600/300" className="w-full"></img>
+              </div>
+              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Project 1</h3>
+              <p className="font-medium text-base text-dark-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="rounded-md shadow-md overflow-hidden">
+                <img src="https://picsum.photos/600/300" className="w-full"></img>
+              </div>
+              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Project 2</h3>
+              <p className="font-medium text-base text-dark-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="rounded-md shadow-md overflow-hidden">
+                <img src="https://picsum.photos/600/300" className="w-full"></img>
+              </div>
+              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Project 3</h3>
+              <p className="font-medium text-base text-dark-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div className="mb-12 p-4 md:w-1/2">
+              <div className="rounded-md shadow-md overflow-hidden">
+                <img src="https://picsum.photos/600/300" className="w-full"></img>
+              </div>
+              <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Project 4</h3>
+              <p className="font-medium text-base text-dark-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="pt-3 pb-32">
+        <div className="container">
+          <div className="w-full px-4">
+            <div className="max-w-xl mx-auto text-center mb-10">
+              <h4 className="font-bold uppercase text-primary text-center text-lg mb-2 lg:text-2xl">Contact</h4>
+              <div className="w-[150px] lg:w-[210px] h-1 bg-dark-light mb-10 ml-24 -translate-x-2 lg:ml-48 lg:-translate-x-3"></div>
+              <h2 className="font-bold text-dark text-3xl mb-4">Connect with me</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+
+          <form>
+            <div className="w-full lg:w-2/3 lg:mx-auto">
+              <div className="flex flex-wrap">
+                <div className="w-full lg:w-1/2 px-4 mb-6">
+                  <label className="text-base text-primary font-bold ml-3" for="name">Nama*</label>
+                  <input type="text" id="name" className="w-full mt-2 p-2 bg-slate-100 text-dark rounded-full focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></input>
+                </div>
+                <div className="w-full lg:w-1/2 px-4 mb-6">
+                  <label className="text-base text-primary font-bold ml-3" for="email">Email*</label>
+                  <input type="email" id="email" className="w-full mt-2 p-2 bg-slate-100 text-dark rounded-full focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></input>
+                </div>
+              </div>
+              <div className="w-full px-4 mb-6">
+                <label className="text-base text-primary font-bold ml-2" for="pesan">Message*</label>
+                <textarea id="pesan" className="w-full p-3 mt-2 bg-slate-100 text-dark rounded-full focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
+              </div>
+              <div className="w-full px-4">
+                <button className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full float-right hover:opacity-80 hover:shadow-lg transition duration-300">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
   )
 }
