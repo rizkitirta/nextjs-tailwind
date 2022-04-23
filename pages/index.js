@@ -98,10 +98,9 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-            <CardPorto />
-            <CardPorto />
-            <CardPorto />
-            <CardPorto />
+            <CardPorto src="./images/img1.jpg" />
+            <CardPorto src="./images/img2.jpg" />
+            <CardPorto src="./images/img3.jpg" />
           </div>
         </div>
       </section>
