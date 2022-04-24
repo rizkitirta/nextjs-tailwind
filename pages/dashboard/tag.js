@@ -14,14 +14,14 @@ function Tag() {
 
     useEffect(() => {
         getTag()
-    }, [tags])
+    }, [])
 
     const saveTag = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3000/api/hello', { name })
+        axios.post('http://localhost:3000/api/v1/create', { name })
             .then(res => {
-                console.log(res)
                 swal("Success!", res.data.message, "success");
+                getTag()
             })
             .catch(err => {
                 swal("Ups!", err.message, "error");
@@ -45,6 +45,7 @@ function Tag() {
                 setName('')
                 setIsEdit(false)
                 setId('')
+                getTag()
             })
             .catch(err => {
                 swal("Ups!", err.message, "error");
@@ -52,6 +53,32 @@ function Tag() {
                 setIsEdit(false)
                 setId('')
             })
+    }
+
+    const deleteTag = (e, id) => {
+        e.preventDefault()
+        swal({
+            title: "Are you sure?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    axios.post('http://localhost:3000/api/v1/tag/delete', { id })
+                        .then(res => {
+                            swal("Success!", res.data.message, "success");
+                            getTag()
+                        })
+                        .catch(err => {
+                            swal("Ups!", err.message, "error");
+                        })
+                    
+                } else {
+                    swal("Hapus Dibatalkan!");
+                }
+            });
+
     }
 
     const getTag = () => {
@@ -117,7 +144,9 @@ function Tag() {
                                                 <td className="border-grey-light border hover:bg-gray-100 p-3 text-red-400 hover:text-red-600 hover:font-medium cursor-pointer">
                                                     <Button type="submit" eventClick={e => editTag(e, tag)} nama="Edit" />
                                                 </td>
-                                                <td className="border-grey-light border hover:bg-gray-100 p-3 text-red-400 hover:text-red-600 hover:font-medium cursor-pointer"><Button bgColor="bg-red-500" type="submit" nama="Delete" /></td>
+                                                <td className="border-grey-light border hover:bg-gray-100 p-3 text-red-400 hover:text-red-600 hover:font-medium cursor-pointer">
+                                                    <Button eventClick={e => deleteTag(e, tag.id)} bgColor="bg-red-500" type="submit" nama="Delete" />
+                                                </td>
                                             </tr>
                                         );
                                     })

@@ -1,10 +1,15 @@
-import db from "../../../../app/libs/dbConnect";
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import db from "../../app/libs/dbConnect";
 
 export default async (req, res) => {
-    const doc = await db.collection('tags').doc(id).get();
-    if (!doc.exists) {
-        res.status(404).end();
-    } else {
-        res.status(200).json(doc.data());
+    try {
+        const data = await db.collection('tags').add({
+            name: req.body.name,
+            created: new Date().toISOString(),
+        });
+        res.status(200).json({ success: true, message: 'Data created successfully', data });
+
+    } catch (e) {
+        res.status(400).json({ success: false, message: e.message }).end();
     }
 }

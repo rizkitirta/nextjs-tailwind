@@ -1,7 +1,6 @@
 import db from "../../../../app/libs/dbConnect";
 
 export default async (req, res) => {
-    console.log(req.body);
     try {
         const data = await db.collection('tags').doc(req.body.id).update({
             name: req.body.name,

@@ -1,10 +1,9 @@
 import db from "../../../../app/libs/dbConnect";
-const date = require('date-and-time')
 
 export default async (req, res) => {
     try {
-        const tags = await db.collection('tags').get();
-        const entriesData = tags.docs.map(entry => {
+        const portofolios = await db.collection('portofolios').orderBy('created','desc').get();
+        const entriesData = portofolios.docs.map(entry => {
             const data = entry.data();
             const id = entry.id;
 

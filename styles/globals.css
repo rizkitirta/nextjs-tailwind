@@ -40,6 +40,7 @@ body {
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
+/* table */
 @media (min-width: 640px) {
   table {
     display: inline-table !important;
@@ -56,4 +57,12 @@ td:not(:last-child) {
 
 th:not(:last-child) {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* dropdowwn */
+.top-100 {top: 100%}
+.bottom-100 {bottom: 100%}
+.max-h-select {
+    max-height: 300px;
 }
