@@ -213,8 +213,8 @@ export default function Home() {
             <div className="w-full mb-12 px-4 text-slate-300 font-medium md:w-1/3">
               <h2 className="font-bold text-white text-3xl mb-5">Wpu</h2>
               <h3 className="font-bold text-white text-2xl">Hubungi kami</h3>
-              <p>rizkipou01@gmail.com</p>
-              <p>jl.pahlawan no 72</p>
+              <p>{"rizkipou01@gmail.com"}</p>
+              <p>Jl pahlawan no 72</p>
               <p>Lampung</p>
             </div>
             <div className="w-full mb-12 px-4 text-slate-300 font-medium md:w-1/3">
