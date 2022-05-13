@@ -128,7 +128,7 @@ export default function Home() {
               <figure><img src="/images/img1.jpg" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Project1!
+                  {"Project1!"}
                   <div className="badge badge-primary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose</p>
@@ -143,7 +143,7 @@ export default function Home() {
               <figure><img src="/images/img1.jpg" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Project1!
+                  {"Project1!"}
                   <div className="badge badge-primary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose</p>
@@ -158,7 +158,7 @@ export default function Home() {
               <figure><img src="/images/img1.jpg" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Project1!
+                  {"Project1!"}
                   <div className="badge badge-primary">NEW</div>
                 </h2>
                 <p>If a dog chews shoes whose shoes does he choose</p>
@@ -254,7 +254,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <p className="font-medium text-sm text-slate-400 text-center">Copyright	&copy; 2021-2022</p>
+          <p className="font-medium text-sm text-slate-400 text-center">{"Copyright"}	&copy; {"2021-2022"}</p>
         </div>
       </footer>
     </div>
