@@ -124,7 +124,7 @@ export default function Home() {
           </div>
           <div className="w-full px-4 flex gap-5 flex-wrap justify-center xl:w-10/12 xl:mx-auto">
 
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 shadow-xl">
               <figure><img src="/images/img1.jpg" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">
@@ -139,7 +139,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 shadow-xl">
               <figure><img src="/images/img1.jpg" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">
@@ -154,7 +154,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 shadow-xl">
               <figure><img src="/images/img1.jpg" alt="Shoes" /></figure>
               <div className="card-body">
                 <h2 className="card-title">
