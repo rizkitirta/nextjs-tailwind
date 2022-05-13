@@ -68,9 +68,9 @@ export default function Home() {
         <div className="container lg:px-32">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
-              <h1 className="text-base font-semibold text-secondary md:text-xl lg:text-3xl">Hallo People👋, i'm <span className="block  font-bold text-4xl md:text-5xl text-dark">Rizki Tirta</span></h1>
-              <h2 className="font-medium text-slate-700 mb-5 md:text-xl">I'm a Backend Developer</h2>
-              <p className="font-medium text-dark-light mb-10 leading-related">Saya Adalah Seorang Fullstack Web Developer Yang Selalu Memberikan Upaya Terbaik Untuk Setiap Proyek Yang Saya Lakukan,Dan Saya Akan MemberiKan Solusi Terbaik Terhadap Aplikasi Kreatif Yang Telah Saya Buat!</p>
+              <h1 className="text-base font-semibold text-secondary md:text-xl lg:text-3xl">{"Hallo People👋, i'm"} <span className="block  font-bold text-4xl md:text-5xl text-dark">Rizki Tirta</span></h1>
+              <h2 className="font-medium text-slate-700 mb-5 md:text-xl">{"I'm a Backend Developer"}</h2>
+              <p className="font-medium text-dark-light mb-10 leading-related">{"Saya Adalah Seorang Fullstack Web Developer Yang Selalu Memberikan Upaya Terbaik Untuk Setiap Proyek Yang Saya Lakukan,Dan Saya Akan MemberiKan Solusi Terbaik Terhadap Aplikasi Kreatif Yang Telah Saya Buat!"}</p>
               <Button nama="Connect With Me" />
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
